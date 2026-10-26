@@ -1,0 +1,25 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show workflow information
+        run: |
+          echo "GitHub Actions workflow started successfully."
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Branch: $GITHUB_REF_NAME"
+
+      - name: Verify project files
+        run: |
+          test -d server
+          test -f README.md
+          echo "Project files verified successfully."
