@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dealerships</title>
+    <link rel="stylesheet" href="../src/components/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/components/assets/style.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; color: #333; }
+        .contact-banner { background: #f2fafa; padding: 35px 20px; text-align: center; }
+        .contact-container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        .contact-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .contact-card { border: 1px solid #ddd; border-radius: 8px; padding: 24px; flex: 1 1 240px; }
+        .contact-card h2 { color: #167d86; }
+        .contact-card img { width: 48px; height: 48px; object-fit: contain; }
+        .navbar { background-color: darkturquoise; min-height: 90px; }
+        .navbar-brand { font-size: 1.5rem; font-weight: bold; }
+        .nav-link { font-size: 1.1rem; }
+        .footer { text-align: center; padding: 20px; background: #f2fafa; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Dealerships</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="contact-banner">
+        <h1>Contact Us</h1>
+        <p>We're here to help you find your next vehicle.</p>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-grid">
+            <section class="contact-card">
+                <h2>Visit Us</h2>
+                <img src="../src/components/assets/person.png" alt="Contact representative">
+                <p>Visit your local dealership for assistance with vehicle sales and services.</p>
+            </section>
+            <section class="contact-card">
+                <h2>Call Us</h2>
+                <p>Phone: Please contact your local dealership for its current phone number.</p>
+            </section>
+            <section class="contact-card">
+                <h2>Email Us</h2>
+                <img src="../src/components/assets/email.png" alt="Email icon">
+                <p>Email: Please contact your local dealership for its current email address.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Dealerships | Contact Us</p>
+    </footer>
+</body>
+</html>
